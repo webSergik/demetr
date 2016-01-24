@@ -1,0 +1,51 @@
+extends ../blocks/layout/layout
+block append head
+  +styles('fonts/fontello/css/fontello.css','css/styles.css')
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+  script(src="js/scripts.js")
+block title
+  title chronology
+block content
+  .chronology_slider
+  .chronology_slider-header
+    .wrapper_chronology
+      h1 Mijn tijdlijn
+      p Wil je nuttige artikelen nog eens teruglezen of vragen stellen aan experts? Kortom, belangrijke zaken om gemakkelijk terug te vinden. Log dan in met uw 'Mijn Alzheimer Nederland' - account.
+  .chronology_how
+    .wrapper_chronology
+      .chronology_now_registred
+        .chronology_now_registred-wrapper
+          span Heb je nog geen account?
+          button.main-button.main-button--timeline Registreer
+            span.icon-down-open-1
+        .chronology_now_registred-wrapper
+          span Ik heb al een account
+          button.main-button.main-button--timeline Inloggen
+            span.icon-down-open-1
+      h2 Zo werkt het
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      button.main-button.main-button--timeline Zo werkt het
+        span.icon-down-open-1
+  .chronology_advantages
+    .wrapper_chronology
+      h2 De voordelen op een rij
+      p Met 'Mijn Alzheimer Nederland account' kun je inloggen op alle websites van Alzheimer Nederland, zoals het vrijwilligersplein, dementie.nl of op de website van Alzheimer Nederland zelf. Hieronder een paar hoofdpunten van wat je in het account kunt vinden voor voor dementie.nl
+      .chronology_advantages_block
+        .chronology_advantages_block-img
+          
+          img(src="img/heart.png" alt="heart" width="50" height="45")
+        .chronology_advantages_block-content
+          h5 Wat je hebt gelezen of nog wilt lezen bewaren op je tijdlijn
+          p Alle bewaarde informatie wordt geplaatst op jouw tijdlijn zodat je het gemakkelijk terug kan vinden.
+      .chronology_advantages_block
+        .chronology_advantages_block-img
+          img(src="")
+        .chronology_advantages_block-content
+          h5 Op de hoogte blijven van waar jij behoefte aan hebt
+          p Geef aan welke informatiebehoefte je hebt en wij houden je daarvan op de hoogte en geven je tips.
+      .chronology_advantages_block
+        .chronology_advantages_block-img
+          img(src="img/forma.png" alt="heart" width="50" height="45")
+        .chronology_advantages_block-content
+          h5 Reacties plaatsen bij artikelen
+          p Jouw reacties die je plaatst op dementie.nl en de reacties die daarop gegeven worden door experts of andere leden kun je hier terug vinden. 

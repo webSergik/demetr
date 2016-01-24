@@ -1,0 +1,229 @@
+.wrapper_chronology {
+  width: 900px;
+  margin: 0 auto;
+  color: #000;
+  h2 {
+    font-family: 'Raisonne AN DemiBold', Helvetica, Arial, sans-serif;
+    font-size: 44px;
+    padding: 80px 0 40px;
+  }
+  p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+  button.main-button.main-button--timeline {
+    display: inline-block;
+    width: 140px;
+    margin-left: 20px;
+    span {
+      vertical-align: 5px;
+    }
+  }
+}
+.chronology_slider {
+  background: url('../img/grandfather.jpg') no-repeat center;
+  max-width: 1024px;
+  height: 477px;
+  margin: 0 auto;
+}
+.chronology_slider-header {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  .wrapper_chronology {
+    position: relative;
+  }
+  h1 {
+    font-family: 'Raisonne AN DemiBold', Helvetica, Arial, sans-serif;
+    font-size: 52px;
+  }
+  p {
+    margin: 0;
+    width: 365px;
+  }
+}
+.chronology_how {
+  background-color: #ebebeb;
+  text-align: center;
+  padding-bottom: 60px;
+  p {
+    width: 650px;
+    margin: 0 auto 30px;
+  }
+}
+.chronology_now_registred {
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  position: relative;
+  top: -65px;
+  span {
+    font-family: 'Open Sans Semibold', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+}
+.chronology_advantages {
+  h2 {
+    text-align: center;
+  }
+  p {
+    width: 650px;
+    margin: 0 auto 80px;
+  }
+}
+.chronology_advantages_block {
+  display: flex;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  .chronology_advantages_block-img {
+    margin-left: 80px;
+    min-width: 230px;
+    min-height: 132px;
+    height: 132px;
+    background-color: #ebebeb;
+    display: flex;
+    img {
+      margin: auto;
+    }
+  }
+  .chronology_advantages_block-content {
+    padding: 0 80px 0 30px;
+    p {
+      width: auto;
+    }
+  }
+  h5 {
+    font-family: 'Open Sans Semibold', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper_chronology {
+    width: 665px;
+  }
+  .chronology_now_registred-wrapper {
+
+    button.main-button.main-button--timeline {
+      display: block;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+  }
+  .chronology_advantages_block {
+    .chronology_advantages_block-img {
+      margin-left: 0;
+    }
+    .chronology_advantages_block-content {
+          padding: 0 0px 0 30px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .wrapper_chronology {
+    width: auto;
+    padding: 0 20px;
+  }
+  .chronology_how {
+    p {
+      width: auto;
+    }
+  }
+  .chronology_advantages {
+    p {
+      width: auto;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .wrapper_chronology {
+    h2 {
+      font-size: 30px;
+      padding: 50px 0 25px;
+    }
+  }
+  .chronology_slider-header {
+    position: static;
+    background-color: #ebebeb;
+    padding: 20px 0;
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      width: auto;
+    }
+  }
+  .chronology_slider {
+    min-height: 180px;
+    background-size: cover;
+  }
+  .chronology_advantages {
+    p {
+      margin-bottom: 40px;
+    }
+  }
+  .chronology_slider {
+    width: 100%;
+    height: auto;
+    background-position: center right;
+  }
+  .chronology_slider p {
+    width: auto;
+  }
+  .chronology_advantages_block {
+    flex-direction: column;
+    margin-bottom: 0;
+    .chronology_advantages_block-img {
+      height: 160px;
+      margin-bottom: 20px;
+    }
+    .chronology_advantages_block-content {
+      padding-left: 0;
+      h5 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .chronology_now_registred {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    top: 0;
+    flex-direction: column;
+    padding: 0;
+    text-align: left;
+    .chronology_now_registred-wrapper {
+      width: 100%;
+      padding: 20px 10px;
+      &:first-child {
+        border-bottom: 1px solid #ebebeb;
+      }
+      span {
+        width: 120px;
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      button.main-button.main-button--timeline {
+        display: inline-block;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-top: 0;
+        span {
+          font-size: 9px;
+          width: 9px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+extends ../blocks/layout/layout
+block append head
+  +styles('fonts/fontello/css/fontello.css','css/styles.css')
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+  script(src="js/scripts.js")
+block title
+  title instr
+block content
+  .wrapper_instr
+    .navigation_instr
+      ul.navigation_instr-menu
+        li.icon-right-open-1.navigation_instr--activ
+          a(href="") Introductie
+        li.icon-right-open-1
+          a(href="") Informatie bewaren
+        li.icon-right-open-1
+          a(href="") Vragen beantwoorden
+        li.icon-right-open-1
+          a(href="") Notitie maken
+        li.icon-right-open-1
+          a(href="") Feedback geven
+        li.icon-right-open-1
+          a(href="") Reageren op artikelen
+        li.icon-right-open-1
+          a(href="") Mijn account
+        li.icon-right-open-1
+          a(href="") Contact
+    .navigation_instr-select
+      select
+        option Ga direct naar...
+        option Introductie
+        option Informatie bewaren
+        option Vragen beantwoorden
+        option Notitie maken
+        option Feedback geven
+        option Reageren op artikelen
+        option Mijn account
+        option Contact
+    .content_instr
+      .content_instr-header
+        h1 Hoe werkt het?
+        p.bold Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+        h4 Introductie: Zo werkt “Mijn tijdlijn”
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      .content_instr-block
+        h4 Informatie bewaren
+        p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+        .content_instr-media
+        span This is an annotation, lorem ipsum.
+        span.italic Lorem ipsum set amet
+      .content_instr-block
+        h4 Informatie bewaren
+        p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+        .content_instr-media
+        span This is an annotation, lorem ipsum.
+        span.italic Lorem ipsum set amet
+      .content_instr-block
+        h4 Informatie bewaren
+        p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+        .content_instr-media
+        span This is an annotation, lorem ipsum.
+        span.italic Lorem ipsum set amet

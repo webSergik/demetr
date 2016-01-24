@@ -1,0 +1,156 @@
+extends ../blocks/layout/layout
+block append head
+  +styles('fonts/fontello/css/fontello.css','css/styles.css')
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+  script(src="js/scripts.js")
+block title
+  title one page
+block content
+  .page_wrapper
+    nav.page_nav
+      h1 Navigation
+    header.page_header
+    main.paig_main
+      .wrapper
+        section.news
+          .news_time
+            span Nieuws
+            span.time.icon-clock 4 min
+          h2 De zorgboederij werkt goed als dagbesteding
+          .category-wrapper
+            .category 
+              span Categorie: 
+              a(href="") Onderzoek
+            .date
+              span 29 mei 2015
+          .news_img
+            img(src="img/news-photo1.jpg" alt="photo-news" width="565" height="256")
+          .news_icons
+            a(href="").icon-clock Later lezen
+            a(href="").icon-printer Printen
+            a(href="").icon-share Delen
+          .news_message.news_message--strong
+            p De zorgboerderij is een waardevolle dagbesteding blijkt uit onderzoek van het Rijksinstituut voor Volksgezondheid en Milieu (NIVM). Vooral gehuwde mannen, die anders geen of minder gebruik zouden maken van dagbesteding, zijn hiervan gecharmeerd. De zorgboerderij draagt bij aan hun gevoel van eigenwaarde. 
+          .news_message
+            p De zorgboerderij is een waardevolle dagbesteding blijkt uit onderzoek van het Rijksinstituut voor Volksgezondheid en Milieu (NIVM). Vooral gehuwde mannen, die anders geen of minder gebruik zouden maken van dagbesteding, zijn hiervan gecharmeerd. De zorgboerderij draagt bij aan hun gevoel van eigenwaarde. 
+          .news_message
+            h4 Vergeetachtigheid of dementie
+            p Opvallend is dat zorgboerderijen vooral worden bezocht door gehuwde mannen. De mannen op de zorgboerderij zijn bovendien met een gemiddelde leeftijd van 73 jaar jonger dan de bezoekers van andere vormen van dagbesteding (gemiddeld 85 jaar). Op een 
+              i zorgboerderij 
+              |hebben zij het gevoel dat ze belangrijk (vrijwilligers)werk doen en dat ze een zinvolle bijdrage leveren.
+          .news_message
+            h4 Ademruimte voor mantelzorger
+            p Ook vanuit het perspectief van de mantelzorger is dagbesteding erg waardevol. Het geeft letterlijk wat ademruimte. Zelf je tijd indelen, al is het voor een dag, zorgt ervoor dat je de zorg voor een naaste langer kunt volhouden.
+          .news_message
+            h4 Factsheet voor gemeenten
+            p De inzichten uit dit onderzoek zijn vooral van belang voor gemeenten. Vanaf dit jaar zijn zij verantwoordelijk voor welke vormen van dagbesteding worden aangeboden. Dementie (en hun mantelzorgers) is daarom van belang. De belangrijkste aanbeveling voor gemeenten is daarom ervoor zorg te dragen dat er diversiteit is in het aanbod van dagbesteding. Als je geïnteresseerd bent in het onderzoek,  
+              a(href="") download 
+              |dan de factsheet van het RIVM.
+          .news_icons
+            a(href="").icon-heart Bewaren
+            a(href="").icon-printer Printen
+            a(href="").icon-share Delen
+          .news_login
+            h3 Plaats je reactie
+            p
+              a(href="") Registreer 
+              |of 
+              a(href="") login 
+              |om een reactive te plaatsen
+          .news_reacties
+            .number-reacties
+              span 18 reacties
+            #reviews_top.select-reacties
+              span Volgorde reacties:
+              a.Nieuwste_eerst(href="") Nieuwste eerst
+                span.icon-down-open-1
+          .news_footer.news_footer-dark
+            .reviews
+              .reviews_img
+                span.square M
+              .reviews_letter_header
+                h4 Mike van der Groot
+                span (Mantelzorger)
+              .reviews_letter
+                p Ik heb gemerkt dat het uitmaakt waar we wonen. Mijn moeder (85 jaar en alleen wonend) voor wie ik zorg, woont in een andere provincie. Daar heb ik een organisatie ontdekt die o.a. vrijwilligers kan koppelen aan dementerende mensen.
+                span.geleden 2 uur geleden
+                span.dotted
+                a(href="") Reageer
+                .answer
+                  img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+                  textarea(placeholder="Beste Kees, fijn om te horen dat het goed met je gaaten dat je")
+                  button.main-button.main-button--news.main-button--right Plaats reactie
+                    span.icon-down-open-1
+            .reviews.reviews_patient
+              .reviews_img
+                img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+              .reviews_letter_header
+                h4 Willem Keizer
+                span (Alzheimer patient)
+              .reviews_letter
+                p Hoi Geraldine, het spijt me om te horen dat je moeder is opgenomen en dat het slecht gaat met je vader. Ik heb ook ook zo’n tijd gehad en het schijnt normaal te zijn na zo’n gebeurtenis. Wat ik alleen maar kan zeggen is volhouden en je vader ondersteunen. Groet Willem.
+                span.geleden 15 minuten geleden
+                span.dotted
+                a(href="") Reageer
+            .reviews.reviews_admin
+              .reviews_img
+                img(src="img/admin.jpg" alt="patient" width="60" height="60")
+                span (Admin)
+              .reviews_letter_header
+                h4 Rob Groot Zwaaftink
+                span (Psycholoog Alzheimer NL)
+              .reviews_letter
+                p Dag Geraldine, 
+                p Heel herkenbaar gedrag. Het lijkt ook wel dat uw vader in een depressie is beland. Het beste is om hier eens samen met de huisarts over te praten, die kan eventueel anit-depressiva voorschrijven. Zijn steun en toeverlaat, uw moeder, is weggevallen en dat is vaak een heel traumatische ervaring voor mensen met beginnend dementie.  Dan zie je ineens dat ze hun ‘roer’ kwijt zijn en anstig worden.
+                p Waarschijnlijk ving uw moeder veel op voor uw vader waardoor de dementie minder confronterend voor hem was. De zorgboederij kan hierbij helpen.
+                span.geleden 8 minuten geleden
+                span.dotted
+                a(href="") Reageer
+            .reviews
+              .reviews_img
+                img(src="img/patient2.jpg" alt="patient" width="60" height="60")
+              .reviews_letter_header
+                h4 Truus Soest
+                span (Mantelzorger & vrijwilliger Alzheimer café)
+              .reviews_letter
+                p Voor mijn moeder die zo graag fietst, heb ik iemand gevonden die met haar gaat fietsen en ze gaat nu ook naar schilderles.
+                span.geleden 2 dagen geleden
+                span.dotted
+                a(href="") Reageer
+            .reviews.reviews_admin.reviews_admin-wide
+              .reviews_img
+                img(src="img/admin.jpg" alt="patient" width="60" height="60")
+                span (Admin)
+              .reviews_letter_header
+                h4 Rob Groot Zwaaftink
+                span (Psycholoog Alzheimer NL)
+              .reviews_letter
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+                span.geleden 1 week geleden
+                span.dotted
+                a(href="") Reageer
+            .reviews
+              .reviews_img
+                span.square K
+              .reviews_letter_header
+                h4 Kees van der Hoeven
+              .reviews_letter
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
+                span.geleden 12 mei 2015
+                span.dotted
+                a(href="") Reageer
+            .mear_reacties
+              button.main-button.main-button--news Meer reacties
+                span.icon-down-open-1
+              a(href="#reviews_top") Naar boven
+                span.icon-up-open-1
+        section.sidebar.sidebar_dark
+          h3 Aanbevolen:
+          nav.sidebar_navigation
+            ul
+              li Informatie
+                a.icon-right-open-1(href="") Jaarlijkse collecteweek weer groot succes
+              li Nieuws
+                a.icon-right-open-1(href="") Mantelzorgers hebben waardering nodig
+              li Informatie
+                a.icon-right-open-1(href="") Dagbesteding vinden voor mensen met dementie

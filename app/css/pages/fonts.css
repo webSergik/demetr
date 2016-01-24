@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('../fonts/open-sans-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Semibold Italic';
+    src: url('../fonts/OpenSans-SemiboldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raisonne AN DemiBold';
+  src:  url('../fonts/RaisonneAN-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RaisonneAN-DemiBold.otf')  format('opentype'),
+	      url('../fonts/RaisonneAN-DemiBold.woff') format('woff'),
+        url('../fonts/RaisonneAN-DemiBold.ttf')  format('truetype'),
+        url('../fonts/RaisonneAN-DemiBold.svg#RaisonneAN-DemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,92 @@
+@media (max-width: 1024px) {
+  .wrapper {
+    width: auto;
+    flex-direction: column;
+  }
+  .news {
+    margin: 0 auto;
+  }
+  section.sidebar {
+    padding: 40px;
+    width: 566px;
+    margin: 50px auto 0;
+  }
+  .sidebar_dark:after {
+    box-shadow: none;
+  }
+}
+@media (max-width: 768px) {
+  .news {
+    padding: 36px 20px 0;
+    width: auto;
+  }
+  .reviews_admin {
+    width: auto;
+    margin-left: 0;
+    padding: 15px 20px;
+  }
+  .reviews_admin-wide {
+    width: auto;
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .news h2 {
+    font-size: 28px;
+  }
+  .news_message p {
+    font-size: 16px;
+  }
+  .news_img img {
+    height: auto;
+  }
+  .news_icons {
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-right: 0;
+    }
+  }
+  .answer {
+    textarea {
+      font-size: 16px;
+    }
+  }
+  .news_reacties {
+    flex-direction: column;
+  }
+  .reviews .reviews_letter {
+    width: auto;
+  }
+  .reviews_patient {
+    margin-left: 0;
+    .reviews_letter {
+      width: auto;
+    }
+  }
+  .reviews_admin {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    .reviews_letter {
+      width: auto;
+      margin-left: 0;
+    }
+    .reviews_img {
+      span {
+        display: none;
+      }
+    }
+  }
+  .reviews .reviews_letter p {
+    font-size: 16px;
+  }
+  .reviews .reviews_letter_header {
+    h4 {
+      font-size: 16px;
+      display: block;
+    }
+  }
+  section.sidebar {
+    width: auto;
+  }
+}

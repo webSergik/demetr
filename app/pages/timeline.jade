@@ -1,0 +1,137 @@
+extends ../blocks/layout/layout
+block append head
+  +styles('fonts/fontello/css/fontello.css','css/styles.css')
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+  script(src="js/scripts.js")
+block title
+  title timeline
+block content
+  .wrapper_timeline
+    .timeline_inner.timeline_inner--first
+      .timeline_title
+      .timeline_content.timeline_content--header
+        h1 Mijn Tijdlijn
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, hoe werkt de tijdlijn.
+        .timeline_dropdown
+          .timeline_dropdown-select
+            input#checkbox1(name="checkbox" type="checkbox" checked="checked")
+            label(for="checkbox1") Alleen nog te lezen artikelen tonen
+          .timeline_dropdown-filter
+            span Filter tijdlijnberichten:
+            span.dropdown-menu.dropdown-menu--up Alles
+              span.icon-down-open-1  
+          ul.dropdown-menu-inner
+            li.icon-right-open-1
+              a(href="") Alles
+            li.icon-right-open-1
+              a(href="") Niet gelezen artikelen
+            li.icon-right-open-1
+              a(href="") Mijn notities
+            li.icon-right-open-1
+              a(href="") Informatie en tips
+            li.icon-right-open-1
+              a(href="") Ervaringsverhalen
+            li.icon-right-open-1
+              a(href="") Nieuwsartikelen
+            li.icon-right-open-1
+              a(href="") Mijn reacties
+    .timeline_inner
+      .timeline_title
+        h5 Vandaag
+        span Maandag 17 augustus 2015
+      .timeline_content
+        .timeline_comment-wrapper
+          h4 Schrijf een notitie of herinnering op je tijdlijn
+          .answer
+            img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+            textarea(placeholder="Beste Kees, fijn om te horen dat het goed met je gaaten dat je")
+            button.main-button.main-button--timeline.main-button--right Plaats reactie
+              span.icon-right-open-1
+      .timeline_title
+        h5 Laatste bezoek
+        span Zaterdag 15 augustus 2015
+      .timeline_content
+        .timeline_info-block
+          h5 Informatie
+          p Het belang van het stellen van een diagnose
+          a(href="").icon-cancel
+        .timeline_info-block.timeline_info-block--news
+          h5 Nieuws
+          p Mantelzorgers hebben waardering nodig
+          a(href="").icon-cancel
+        .timeline_info-block.media--block
+          .media-block_img
+            img(src="/img/grandmother.jpg" alt="grandmother" width="366" height="228")
+          .media-block_content.timeline_info-block--corner
+            h5 'Ze bleef maar mopperen. Eindeloos mopperen.'
+            span 14 maart 2015
+            span Een verhaal van Caroline
+            a(href="").icon-cancel
+            a(href="").icon-clock
+      .timeline_title.timeline_title--single
+        span Donderdag 13 juli 2015
+      .timeline_content
+        .timeline_info-block.timeline_info-block--twocorner
+          h5 Geschreven op mijn tijdlijn
+          p 'Waren alle dagen maar zo leuk en makkelijk als vandaag. Wat was papa in een goede bui. Hij heeft heerlijk met Charlie gespeeld en wist zelfs te vertellen dat-ie zo’n leuke man heeft ontmoet. Die woonde vroeger vlak bij ons in de buurt.
+          a(href="").icon-cancel
+      .timeline_title.timeline_title--single
+        span Dinsdag 11 juli 2015
+      .timeline_content
+        .timeline_info-block
+          h5 Informatie
+          p Signaal van dementie: terugtrekken uit sociale activiteiten
+          a(href="").icon-cancel
+          .timeline_info-block-delete
+            p Wil je dit item verwijderen 
+              br
+              |van je tijdlijn?
+            a.yes(href="") Annuleren
+              span.icon-right-open-1
+            a.no(href="") Verwijder van tijdlijn
+              span.icon-right-open-1
+            a(href="").icon-cancel
+        .timeline_info-block.timeline_info-block--news.timeline_info-block--corner
+          h5 Nieuws
+          p Mantelzorgers hebben waardering nodig
+          a(href="").icon-cancel
+          a(href="").icon-clock
+        .timeline_info-block
+          h5 Informatie
+          p Signaal van dementie: terugtrekken uit sociale activiteiten
+          a(href="").icon-cancel
+        .timeline_info-block.timeline_info-block--news
+          h5 Nieuws
+          p Mantelzorgers hebben waardering nodig
+          a(href="").icon-cancel           
+        .timeline_info-block
+          h5 Tip
+          p De beste manier om een specialist te raadplegen
+          a(href="").icon-cancel
+        button.main-button.main-button--timeline.main-button--center Alle items tonen
+          span.icon-down-open-1
+      .timeline_title.timeline_title--single
+        span Dinsdag 11 juli 2015
+      .timeline_content
+        .timeline_info-block.timeline_info-block--news
+          h5 Nieuws
+          p De zorgboederij werkt goed als dagbesteding
+          a(href="").icon-cancel
+        .timeline_info-footer
+          .reviews
+            .reviews_img
+              img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+            .reviews_letter_header
+              h4 Willem Keizer
+              span (Alzheimer patient)
+            .reviews_letter
+              p Hoi Geraldine, het spijt me om te horen dat je moeder is opgenomen en dat het slecht gaat met je vader. Ik heb ook ook zo’n tijd gehad en het schijnt normaal te zijn na zo’n gebeurtenis. Wat ik alleen maar kan zeggen is volhouden en je vader ondersteunen. Groet Willem.
+              span.geleden 15 minuten geleden
+          a(href="") Bekijk alle reacties
+            span.icon-right-open-1
+      .timeline_title
+        h5 Tijdlijn aangemaakt
+        span Zondag 10 juli 2015
+    .up
+      a(href="") Naar boven
+        span.icon-up-open-1
