@@ -1,8 +1,8 @@
 extends ../blocks/layout/layout
 block append head
-  +styles('fonts/fontello/css/fontello.css','css/styles.css')
+  +styles('public/fonts/fontello/css/fontello.css','public/css/styles.css')
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-  script(src="js/scripts.js")
+  script(src="public/js/scripts.js")
 block title
   title timeline
 block content
@@ -43,7 +43,7 @@ block content
         .timeline_comment-wrapper
           h4 Schrijf een notitie of herinnering op je tijdlijn
           .answer
-            img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+            img(src="public/img/patient1.jpg" alt="patient" width="60" height="60")
             textarea(placeholder="Beste Kees, fijn om te horen dat het goed met je gaaten dat je")
             button.main-button.main-button--timeline.main-button--right Plaats reactie
               span.icon-right-open-1
@@ -61,7 +61,7 @@ block content
           a(href="").icon-cancel
         .timeline_info-block.media--block
           .media-block_img
-            img(src="/img/grandmother.jpg" alt="grandmother" width="366" height="228")
+            img(src="/public/img/grandmother.jpg" alt="grandmother" width="366" height="228")
           .media-block_content.timeline_info-block--corner
             h5 'Ze bleef maar mopperen. Eindeloos mopperen.'
             span 14 maart 2015
@@ -120,7 +120,7 @@ block content
         .timeline_info-footer
           .reviews
             .reviews_img
-              img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+              img(src="public/img/patient1.jpg" alt="patient" width="60" height="60")
             .reviews_letter_header
               h4 Willem Keizer
               span (Alzheimer patient)

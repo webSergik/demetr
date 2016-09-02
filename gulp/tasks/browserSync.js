@@ -5,7 +5,7 @@ gulp.task('server', function() {
 	notify: false,
 	browserSync({
 		server: {
-			baseDir: "public",
+			baseDir: "./",
 			routes: {
 				"/bower_components": "bower_components"
 			}

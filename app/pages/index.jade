@@ -1,8 +1,8 @@
 extends ../blocks/layout/layout
 block append head
-  +styles('fonts/fontello/css/fontello.css','css/styles.css')
+  +styles('public/fonts/fontello/css/fontello.css','public/css/styles.css')
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-  script(src="js/scripts.js")
+  script(src="public/js/scripts.js")
 block title
   title one page
 block content
@@ -24,7 +24,7 @@ block content
             .date
               span 29 mei 2015
           .news_img
-            img(src="img/news-photo1.jpg" alt="photo-news" width="565" height="256")
+            img(src="public/img/news-photo1.jpg" alt="photo-news" width="565" height="256")
           .news_icons
             a(href="").icon-clock Later lezen
             a(href="").icon-printer Printen
@@ -77,13 +77,13 @@ block content
                 span.dotted
                 a(href="") Reageer
                 .answer
-                  img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+                  img(src="public/img/patient1.jpg" alt="patient" width="60" height="60")
                   textarea(placeholder="Beste Kees, fijn om te horen dat het goed met je gaaten dat je")
                   button.main-button.main-button--news.main-button--right Plaats reactie
                     span.icon-down-open-1
             .reviews.reviews_patient
               .reviews_img
-                img(src="img/patient1.jpg" alt="patient" width="60" height="60")
+                img(src="public/img/patient1.jpg" alt="patient" width="60" height="60")
               .reviews_letter_header
                 h4 Willem Keizer
                 span (Alzheimer patient)
@@ -94,7 +94,7 @@ block content
                 a(href="") Reageer
             .reviews.reviews_admin
               .reviews_img
-                img(src="img/admin.jpg" alt="patient" width="60" height="60")
+                img(src="public/img/admin.jpg" alt="patient" width="60" height="60")
                 span (Admin)
               .reviews_letter_header
                 h4 Rob Groot Zwaaftink
@@ -108,7 +108,7 @@ block content
                 a(href="") Reageer
             .reviews
               .reviews_img
-                img(src="img/patient2.jpg" alt="patient" width="60" height="60")
+                img(src="public/img/patient2.jpg" alt="patient" width="60" height="60")
               .reviews_letter_header
                 h4 Truus Soest
                 span (Mantelzorger & vrijwilliger Alzheimer café)
@@ -119,7 +119,7 @@ block content
                 a(href="") Reageer
             .reviews.reviews_admin.reviews_admin-wide
               .reviews_img
-                img(src="img/admin.jpg" alt="patient" width="60" height="60")
+                img(src="public/img/admin.jpg" alt="patient" width="60" height="60")
                 span (Admin)
               .reviews_letter_header
                 h4 Rob Groot Zwaaftink

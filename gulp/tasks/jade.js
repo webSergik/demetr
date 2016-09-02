@@ -9,6 +9,6 @@ gulp.task('jade', function() {
   .pipe(jade({
     pretty: true
   }))
-  .pipe(gulp.dest('public'))
+  .pipe(gulp.dest('./'))
   .pipe(browserSync.reload({stream: true}));
 });
